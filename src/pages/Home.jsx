@@ -1,4 +1,4 @@
-import HomeLandding from "../componets/Home/HomeLandding"
+import HomeLandding from "../components/Home/HomeLandding"
 
 const Home = () => {
   return (

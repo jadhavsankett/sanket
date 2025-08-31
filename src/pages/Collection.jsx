@@ -1,4 +1,4 @@
-import ProCollection from "../componets/Collection/ProCollection"
+import ProCollection from "../components/Collection/ProCollection"
 
 
 const Collection = () => {
