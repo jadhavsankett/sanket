@@ -1,0 +1,164 @@
+.pipboy {
+  margin: 2rem 2rem;
+  background-color: black;
+  color: #00ff66;
+  font-family: 'Orbitron';
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  border: 2px solid #00ff66;
+}
+
+/* Left stats panel */
+.stats-panel h2 {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Press Start 2P';
+}
+
+.mode {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.stats-list-wrapper {
+  position: relative;
+  height: auto;
+}
+
+.highlight-slider {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  background-color: rgba(0, 255, 102, 0.25);
+  transition: top 0.3s ease;
+  z-index: 0;
+}
+
+.stats-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.stats-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.stats-list li.active {
+  font-weight: bold;
+}
+
+
+/* Right panel (below on mobile) */
+.right-panel {
+  border-top: 1px solid #00ff66;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vaultboy-box {
+  width: 100%;
+  max-width: 550px;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  font-family: 'Press Start 2P';
+}
+
+/* Bottom bar */
+.bottom-bar {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  border-top: 1px solid #00ff66;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.level {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.level-bar {
+  width: 100px;
+  height: 10px;
+  border: 1px solid #00ff66;
+}
+
+.level-bar .fill {
+  background-color: #00ff66;
+  width: 60%;
+  height: 100%;
+}
+
+/* Vault Boy animation */
+.vaultboy-anim .arm-left,
+.vaultboy-anim .arm-right {
+  animation: wave 1.5s infinite ease-in-out alternate;
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg); transform-origin: 70px 80px; }
+  to { transform: rotate(15deg); transform-origin: 70px 80px; }
+}
+
+/* Enhance for tablets and larger screens */
+@media (min-width: 700px) {
+  .pipboy {
+    grid-template-columns: 1fr 1fr;
+  }
+  .right-panel {
+    border-top: none;
+    border-left: 1px solid #00ff66;
+    padding-left: 20px;
+    padding-top: 0;
+  }
+  .bottom-bar {
+    grid-column: span 2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+.pipboy.red {
+  border: 2px solid red;
+  color: red;
+}
+
+.pipboy.red .level-bar .fill {
+  background-color: red;
+}
+
+.pipboy.red .highlight-slider {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+.pipboy.red .right-panel {
+  border-color: red;
+}

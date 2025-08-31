@@ -1,0 +1,35 @@
+.a-preloader-wrapper {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0f0;
+  font-family: monospace;
+  z-index: 9999;
+}
+
+.a-preloader-content {
+  text-align: center;
+}
+
+.a-preloader-text {
+  margin: 5px 0;
+}
+
+.a-preloader-percent {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #0f0;
+}
+
+#matrixCanvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* show during matrix rain */
+  z-index: 998;
+}

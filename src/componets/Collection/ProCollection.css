@@ -1,0 +1,282 @@
+.pro-dev{
+  width: 100%;
+}
+
+.pro-collection{
+    width: 100%;
+    min-height: 100vh;
+    color: #00ff3c;
+}
+
+.pro-collection .titles-dev{
+    padding: 2rem 1.5rem;
+}
+
+.pro-collection .titles-dev h1{
+   font-size: 1.3rem;
+}
+
+.pro-collection .titles-dev p{
+    font-family: 'Press Start 2P';
+    padding-top:.5rem;
+    font-size: 1rem;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+  min-height: 100vh;
+  justify-items: center;
+}
+
+.card-border {
+  position: relative;
+  padding: 1.5rem;
+  background: rgba(0, 255, 0, 0.05);
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 0 100%);
+  box-shadow: 0 0 20px rgba(0,255,0,0.8);
+  width: 260px;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Courier New", monospace;
+  color: #00ff00;
+  position: relative;
+}
+
+.card-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(to right, rgba(0,255,0,0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,255,0,0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ICON STYLES */
+.swirl {
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(#00ff00 0deg 30deg, transparent 30deg 60deg, 
+                            #00ff00 60deg 90deg, transparent 90deg 120deg, 
+                            #00ff00 120deg 150deg, transparent 150deg 180deg,
+                            #00ff00 180deg 210deg, transparent 210deg 240deg,
+                            #00ff00 240deg 270deg, transparent 270deg 300deg,
+                            #00ff00 300deg 330deg, transparent 330deg 360deg);
+  border-radius: 50%;
+  animation: spin 15s linear infinite; /* rotate continuously */
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hex {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(60deg, #00ff00, #00ff00 10%, transparent 10%, transparent 20%);
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+}
+
+.pulse {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #00ff00 30%, transparent 31%);
+  animation: pulseAnim 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseAnim {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+}
+
+.ring {
+  width: 100%;
+  height: 100%;
+  border: 6px solid #00ff00;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ff00, inset 0 0 10px #00ff00;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 25%, #00ff00 25%, #00ff00 50%, transparent 50%, transparent 75%, #00ff00 75%, #00ff00);
+  background-size: 40% 40%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.crosshair {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00ff00;
+  border-radius: 50%;
+  position: relative;
+}
+.crosshair::before,
+.crosshair::after {
+  content: "";
+  position: absolute;
+  background: #00ff00;
+}
+.crosshair::before {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+.crosshair::after {
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+}
+
+.square{
+  width: 60%;
+  height: 60%;
+  border: 2px solid #00ff00;
+  animation: pulse 5.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+}
+
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background: repeating-linear-gradient(
+    45deg,
+    #00ff00,
+    #00ff3c 10%,
+    transparent 10%,
+    transparent 20%
+  );
+  clip-path: polygon(
+    50% 0%, 
+    100% 38%, 
+    82% 100%, 
+    18% 100%, 
+    0% 38%
+  );
+}
+
+
+
+
+.card-text {
+  z-index: 1;
+}
+
+.top-code {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+p {
+  font-size: 0.8rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.bottom-code {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+
+/* pop */
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 999;
+}
+
+.modal-card {
+  width: 80%;
+  max-width: 800px;
+  padding: 1.5rem;
+  background: rgba(0,255,0,0.05);
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  clip-path: polygon(0 0, 97% 0, 100% 10%, 100% 90%, 97% 100%, 0 100%);
+  box-shadow: 0 0 25px rgba(0,255,0,0.9);
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  position: relative;
+}
+
+.modal-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.modal-left {
+  flex: 1;
+}
+
+.modal-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.details {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #00ff00;
+}
+
+.big {
+  width: 120px !important;
+  height: 120px !important;
+}

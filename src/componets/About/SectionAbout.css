@@ -1,0 +1,519 @@
+/* === Base styling (Mobile First) === */
+.main-dev {
+  color: #00ff3c;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Section container */
+.about-back {
+  width: 100%;
+  min-height: 100vh; /* full height on mobile */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* First block (title + subtitle) */
+.about-back .first-dev {
+  display: flex;
+  flex-direction: column; /* stack on mobile */
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.about-back .first-dev h1 {
+  font-size: 1.5rem; /* mobile size */
+}
+
+.about-back .first-dev p {
+  font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+  font-size: 0.7rem;
+}
+
+/* Image full width, proportional height */
+.about-back img {
+  width: 100%;
+  height: auto;
+  max-height: 40vh;
+  object-fit: cover;
+}
+
+/* Second block: text + SVG column */
+.about-back .second-dev {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column; /* stack on mobile */
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Paragraph container */
+.about-back .second-dev .para-container {
+  width: 100%;
+  font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  font-size: 0.9rem; /* slightly smaller for mobile */
+}
+
+/* blinking cursor */
+.cursor {
+  color: #00ff3c;
+  animation: blink 0.8s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* SVG buttons */
+.about-back .second-dev .svg-dev {
+  display: flex;
+  flex-direction: row; /* inline buttons on mobile */
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.svg-dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* SVG base */
+.a-play-btn {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  width: 48px;
+  height: 48px;
+}
+
+/* Rotate when playing */
+.rotate {
+  animation: spin 3s linear infinite;
+}
+
+/* Hover glow */
+.a-play-btn:hover {
+  filter: drop-shadow(0 0 6px #00ff3c) drop-shadow(0 0 12px #00ff3c);
+  transform: scale(1.05);
+}
+
+/* Rotate animation keyframes */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Play text styling */
+h2 {
+  color: #00ff3c;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+
+/* Next section base */
+.about-next {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+
+
+/* === Responsive Breakpoints === */
+
+/* Tablets (≥768px) */
+@media (min-width: 768px) {
+  .about-back .first-dev {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-back .first-dev h1 {
+    font-size: 2rem;
+  }
+
+  .about-back .second-dev {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-back .second-dev .para-container {
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  .about-back .second-dev .svg-dev {
+    flex-direction: column;
+    width: 30%;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
+  .a-play-btn {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+/* Desktops (≥1024px) */
+@media (min-width: 1024px) {
+  .about-back {
+    padding: 2rem 3rem;
+    gap: 2rem;
+  }
+
+  .about-back .first-dev h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-back .second-dev .para-container {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .a-play-btn {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+
+
+
+
+
+
+
+/* -----Page3 code------ */
+.main-dev .about-next{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.main-dev .about-next #page3 {
+    width: 100%;
+    padding: 0 2.1vw;
+    position: relative;
+}
+
+#page3 > h3 {
+    font-size: 4.8vmax;
+    margin-bottom: 0vmax;
+}
+
+#page3 > h3 span {
+    font-size: 4.8vmax;
+    font-family:"DSEG7 Classic";
+    color: #ff2f00;
+}
+
+#page3 > h5 {
+    font-size: 1rem;
+    font-family:"Press Start 2P";
+    margin-bottom: 1.4vmax;
+
+}
+
+.box h4 {
+    font-size: 2vmax;
+    border: 2px solid #00ff3c;
+    display: inline-block;
+    color: #00ff3c;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 7px;
+    margin-top: 2vmax;
+    margin-bottom: 1.6vmax;
+}
+
+
+.box img {
+    height: 5vmax;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    background-color:#00ff3c4f;
+    padding: 5px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.des-box img {
+    height: 6vmax;
+    margin-right: 1.4vmax;
+    transition: all 0.3s ease;
+}
+
+.dev-box img{
+     transition: all 0.3s ease;
+}
+
+.des-box img:hover,
+.dev-box img:hover{
+    scale: 1.1;
+}
+
+.elem-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* ----Page3 responsive---- */
+
+
+
+@media (max-width:600px) {
+
+
+    #page3 {
+        height: 40vh;
+        width: 100%;
+        padding: 5vh 5.1vw;
+        position: relative;
+    }
+
+    #page3 > h3 {
+        font-size: 4.4vmax;
+        margin-bottom: 0vmax;
+    }
+
+    #page3 > h3 span {
+        font-size: 4.4vmax;
+    font-family:"DSEG7 Classic";
+        color: #38cdfa;
+    }
+
+    #page3 > h5 {
+        font-size: 2.2vmax;
+    font-family:"Press Start 2P";
+        font-weight: 500;
+        margin-bottom: 1.4vmax;
+
+    }
+
+    .box h4 {
+        font-size: 2.1vmax;
+        border: 2px solid #00ff3c;
+        display: inline-block;
+        color: #00ff3c;
+        font-weight: 500;
+        padding: 5px 9px;
+        border-radius: 7px;
+        margin-top: 4vmax;
+        margin-bottom: 2vmax;
+    }
+
+
+    .box img {
+        height: 5.8vmax;
+        margin-right: 5px;
+        /* background-color: #fff; */
+        padding: 4px;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .des-box img {
+        height: 6.7vmax;
+        margin-right: 5px;
+    }
+}
+
+.marquee {
+    padding-top: 2rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;  
+}
+
+.marquee-inner {
+  display: flex;
+  width: max-content;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-inner span {
+  font-size: 2rem;          /* adjust text size */
+  font-weight: bold;
+  font-family: "Press Start 2P";
+  color: #00ff3c;             /* text color */
+  padding: 0 2rem;          /* space between repeats */
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.about-bext {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Base layout for mobile */
+.page2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;       /* stack on small screens */
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.page2-left {
+  width: 100%;
+  padding-right: 0;
+  border-right: none;
+}
+
+.page2-left h2 {
+  font-size: 8vw;               /* scales with viewport width */
+  font-family: canopee;
+  line-height: 1.1;
+  font-weight: 100;
+}
+
+.page2-left h2 span {
+  font-size: 12vw;
+  font-weight: 900;
+  color: red;
+  transition: color 0.3s ease;
+}
+
+.page2-left h2 span:hover {
+  color: #00ff3c;
+}
+
+.page2-left img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.page2-left p {
+  font-size: 4vw;
+  font-family: 'Orbitron';
+  color: #00ff3cae;
+  font-weight: 100;
+  margin-top: 0.5rem;
+}
+
+/* Right section stacked by default */
+.page2-right {
+  width: 100%;
+  padding: 0;
+}
+
+.page2-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.page2-right h1 {
+  font-size: 10vw;
+  font-family: canopee;
+  letter-spacing: -1px;
+  font-weight: 100;
+  line-height: 1.1;
+}
+
+.page2-right h1 span {
+  color: red;
+  font-size: 12vw;
+  font-family: canopee;
+  font-weight: 100;
+  transition: color 0.3s ease;
+}
+
+.page2-right h1 span:hover {
+  color: #00ff3c;
+}
+
+/* Tablet view (≥768px) */
+@media (min-width: 768px) {
+  .page2 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  .page2-left {
+    width: 40%;
+    padding-right: 2rem;
+    border-right: 1px solid #00ff3c83;
+  }
+
+  .page2-left h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+  .page2-left h2 span {
+    font-size: 6rem;
+  }
+
+  .page2-left p {
+    font-size: 1.5rem;
+  }
+
+  .page2-right {
+    width: 55%;
+    padding: 0 2rem;
+  }
+
+  .page2-right h1 {
+    font-size: 4.5rem;
+  }
+
+  .page2-right h1 span {
+    font-size: 5.5rem;
+  }
+}
+
+/* Desktop view (≥1024px) */
+@media (min-width: 1024px) {
+  .page2-left h2 {
+    font-size: 70px;
+    line-height: 110px;
+  }
+
+  .page2-left h2 span {
+    font-size: 120px;
+  }
+
+  .page2-left p {
+    font-size: 30px;
+  }
+
+  .page2-right h1 {
+    font-size: 90px;
+  }
+
+  .page2-right h1 span {
+    font-size: 110px;
+  }
+}
