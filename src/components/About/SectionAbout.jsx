@@ -40,6 +40,7 @@ const SectionAbout = () => {
   /* skills section */
   const devSkills = [
     { src: "./images/React-icon.svg.webp", alt: "React" },
+    { src: "./images/nextjs.png", alt: "Next.js" },
     { src: "./images/node-min.webp", alt: "Node.js" },
     { src: "./images/html-min.webp", alt: "HTML" },
     { src: "./images/css-min.webp", alt: "CSS" },
@@ -56,9 +57,9 @@ const SectionAbout = () => {
   ];
 
   const designSkills = [
+    { src: "./images/canva.png", alt: "Canva" },
     { src: "./images/premierepro-min.png", alt: "Premiere Pro" },
     { src: "./images/figma-min.webp", alt: "Figma", className: "figmaimg" },
-    { src: "./images/canva.png", alt: "Canva" },
   ];
 
 
@@ -224,16 +225,16 @@ const SectionAbout = () => {
             />
             <h1>Reach out through <br />
               <span className="mail">
-                <a href="mailto: jadhavsanket5656@gmail.com"
+                <a href="mailto: sanketjadhav9550@gmail.com"
                   onMouseEnter={handleMouseEnter}
                   onClick={handleClick}
                 >mail</a>
-              </span> or
+              {/* </span> or
               <span className="instagram">
                 <a href="/"
                   onMouseEnter={handleMouseEnter}
                   onClick={handleClick}
-                > instagram</a>
+                > instagram</a> */}
               </span> or <span className="linkedin">
                 <a href="https://www.linkedin.com/in/sanket2x5/"
                   onMouseEnter={handleMouseEnter}

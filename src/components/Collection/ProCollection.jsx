@@ -50,27 +50,27 @@ const cards = [
     codeBottom: "1110 0101.0 111 000!",
     iconType: "cube"
   },
-  {
-    codeTop: "000.061",
-    title: ["Precision", "Targeting", "Module."],
-    subtitle: "AI-Powered Guidance System",
-    codeBottom: "0111 1010.1 010 110!",
-    iconType: "crosshair"
-  },
-  {
-    codeTop: "000.071",
-    title: ["Precision", "Targeting", "Module."],
-    subtitle: "AI-Integrated Auto System",
-    codeBottom: "0111 1010.1 010 110!",
-    iconType: "square"
-  },
-  {
-    codeTop: "000.081",
-    title: ["Precision", "Targeting", "Zara."],
-    subtitle: "E-Com Clothing Brand",
-    codeBottom: "0111 1010.1 010 110!",
-    iconType: "pentagon"
-  }
+  // {
+  //   codeTop: "000.061",
+  //   title: ["Precision", "Targeting", "Module."],
+  //   subtitle: "AI-Powered Guidance System",
+  //   codeBottom: "0111 1010.1 010 110!",
+  //   iconType: "crosshair"
+  // },
+  // {
+  //   codeTop: "000.071",
+  //   title: ["Precision", "Targeting", "Module."],
+  //   subtitle: "AI-Integrated Auto System",
+  //   codeBottom: "0111 1010.1 010 110!",
+  //   iconType: "square"
+  // },
+  // {
+  //   codeTop: "000.081",
+  //   title: ["Precision", "Targeting", "Zara."],
+  //   subtitle: "E-Com Clothing Brand",
+  //   codeBottom: "0111 1010.1 010 110!",
+  //   iconType: "pentagon"
+  // }
 ];
 
 const ProCollection = () => {
