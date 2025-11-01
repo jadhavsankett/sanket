@@ -57,8 +57,9 @@ const SectionAbout = () => {
   ];
 
   const designSkills = [
-    { src: "./images/canva.png", alt: "Canva" },
     { src: "./images/premierepro-min.png", alt: "Premiere Pro" },
+    { src : "./images/Aftereffect.png" , alt: "After Effects"},
+    { src: "./images/canva.png", alt: "Canva" },
     { src: "./images/figma-min.webp", alt: "Figma", className: "figmaimg" },
   ];
 
