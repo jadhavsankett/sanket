@@ -68,6 +68,19 @@
    padding-top: 1rem;
 }
 
+.container-dev .text-dev .right-side .top .text{
+   display: inline-block;
+  animation: vibrate 0.3s linear infinite;
+}
+
+@keyframes vibrate {
+  0%   { transform: translate(0); }
+  20%  { transform: translate(-2px, 2px); }
+  40%  { transform: translate(-2px, -2px); }
+  60%  { transform: translate(2px, 2px); }
+  80%  { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
 
 .container-dev .text-dev .right-side .bottom{
    padding-bottom: 1rem;

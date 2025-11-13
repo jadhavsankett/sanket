@@ -86,6 +86,20 @@
   cursor: pointer;
 }
 
+.about-back .second-dev .svg-dev .text h1{
+   display: inline-block;
+  animation: vibrate 0.3s linear infinite;
+}
+
+@keyframes vibrate {
+  0%   { transform: translate(0); }
+  20%  { transform: translate(-2px, 2px); }
+  40%  { transform: translate(-2px, -2px); }
+  60%  { transform: translate(2px, 2px); }
+  80%  { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
 /* SVG base */
 .a-play-btn {
   transition: transform 0.3s ease, filter 0.3s ease;
