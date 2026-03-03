@@ -373,7 +373,7 @@ const HomeLandingWithPreloader = () => {
                         <div className="mt-3 d-flex align-items-center justify-content-center a-hero-btn-wrapper">
                             <a
                                 className="a-btn a-p-btn position-relative a-hero-btn d-flex align-items-center justify-content-center"
-                                href="/path-to-your-resume.pdf"
+                                href="\images\SanketResume.pdf"
                                 download
                                 onMouseEnter={handleMouseEnter}
                                 onClick={handleClick}
